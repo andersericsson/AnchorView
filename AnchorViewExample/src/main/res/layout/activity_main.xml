@@ -1,0 +1,49 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <com.jayway.anchorview.AnchorView
+        android:id="@+id/anchor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:relativeWidth="0.67"
+        app:relativeHeight="0.1"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@id/anchor"
+        android:background="#626"
+        android:padding="30dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a erat sed sapien vehicula tempor. Nam gravida tempor mi. "
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/anchor"
+        android:background="#A0C"
+        android:padding="30dp"
+        android:text="This is a view"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/anchor"
+        android:layout_marginRight="-24dp"
+        android:layout_below="@id/anchor"
+        android:padding="4dp"
+        android:textSize="20sp"
+        android:background="#FF0"
+        android:text="Marker"/>
+
+</RelativeLayout>

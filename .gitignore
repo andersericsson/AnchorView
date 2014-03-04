@@ -27,3 +27,7 @@ proguard/
 *.ipr
 *.iws
 .idea/
+
+.gradle
+/.idea/workspace.xml
+.DS_Store

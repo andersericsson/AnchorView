@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AnchorView">
+        <attr name="relativeWidth" format="float" />
+        <attr name="relativeHeight" format="float" />
+    </declare-styleable>
+</resources>
